@@ -1,0 +1,8 @@
+.catContainer {
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
