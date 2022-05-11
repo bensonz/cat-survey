@@ -1,8 +1,37 @@
 .catContainer {
   position: absolute;
+  display: block;
   left: 0;
   bottom: 1em;
-  width: 200px;
+  width: 50px;
   height: 200px;
   background-color: black;
+  transition: 1s linear all;
+}
+
+@keyframes catShowUp {
+  from {}
+  to {width: 250px; background-color: white;}
+}
+
+.catContainer:hover:not(.active) {
+  width: 250px;
+  transition: 1s linear all;
+  background-color: white;
+}
+
+.catContainer.active {
+  width: 400px;
+
+  transition: 1s linear all;
+  background-color: #46789f;
+}
+
+.catContainer .left-ear {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  position: relative;
 }
